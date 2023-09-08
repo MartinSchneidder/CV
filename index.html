@@ -1,76 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head class="style-haupt">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Curriculum Vitae" />
     <meta name="author" content="Martin Schneider" />
     <title>Curriculum Vitae</title>
-    <h1>Curriculum Vitae</h1>
-    <p>Webentwickler im Training</p>
   </head>
 
   <body>
-    <article>
-      <h2>Profile</h2>
-      <p>
-        Martin Schneider <br />
-        36 Jahre <br />
-        Wohnhaft in Halle <br />
-      </p>
-    </article>
-
-    <article>
-      <h2>Experiences</h2>
-      <section>
-        <header>
-          <h3>Textildruck Europa</h3>
-          <p>8 Jahre (2015-2023)</p>
-        </header>
+    <header class="style-header">
+      <h1>Curriculum Vitae</h1>
+      <p>Webentwickler im Training</p>
+      <nav>
+        <a href="#Profile">Profile</a>
+        <a href="#Experiences">Experiences</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+    <haupt class="style-haupt">
+      <article id="Profile" class="style-haupt">
+        <h2>Profile</h2>
         <p>
-          Mein Studentenjob in dem ich auch noch nach dem Studium tätig war.
+          Martin Schneider <br />
+          36 Jahre <br />
+          Wohnhaft in Halle <br />
         </p>
-        <!--<h4>Tätigkeitsfelder</h4>-->
-        <ul>
-          <li>Textilen Verpacken</li>
-          <li>Pakete Versanden</li>
-          <li>Lager Tätigkeiten</li>
-        </ul>
-      </section>
+      </article>
 
-      <section>
-        <header>
-          <h3>HiWi an MLU</h3>
-          <p>1 Jahr (2012)</p>
-        </header>
-        <p>
-          Im Studium habe ich einen Hilfswissenschaftler Minijob angetreten.
-          Dabei habe ich einen simplen Performancemonitor gebaut, der einen
-          Prozesse und ihre Threads überwacht.
-        </p>
-      </section>
-    </article>
+      <article id="Experiences" class="style-haupt">
+        <h2>Experiences</h2>
+        <section>
+          <header>
+            <h3>Textildruck Europa</h3>
+            <p>8 Jahre (2015-2023)</p>
+          </header>
+          <p>
+            Mein Studentenjob in dem ich auch noch nach dem Studium tätig war.
+          </p>
+          <!--<h4>Tätigkeitsfelder</h4>-->
+          <ul>
+            <li>Textilen Verpacken</li>
+            <li>Pakete Versanden</li>
+            <li>Lager Tätigkeiten</li>
+          </ul>
+        </section>
 
-    <article>
-      <h2>Skills</h2>
-      <section>
-        <h3>soft skills</h3>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-      <section>
-        <h3>technical skills</h3>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-    </article>
+        <section>
+          <header>
+            <h3>HiWi an MLU</h3>
+            <p>1 Jahr (2012)</p>
+          </header>
+          <p>
+            Im Studium habe ich einen Hilfswissenschaftler Minijob angetreten.
+            Dabei habe ich einen simplen Performancemonitor gebaut, der einen
+            Prozesse und ihre Threads überwacht.
+          </p>
+        </section>
+      </article>
 
-    <article>
-      <h2>contact</h2>
-    </article>
+      <article id="Skills" class="style-haupt">
+        <h2>Skills</h2>
+        <section>
+          <h3>Soft skills</h3>
+          <ul>
+            <li>Kritikfähig</li>
+            <li>Teamfähig</li>
+            <li>Kreativ</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Technical skills</h3>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>JS</li>
+          </ul>
+        </section>
+      </article>
+
+      <article id="Contact" class="style-haupt">
+        <h2>Contact</h2>
+        <ol type="I">
+          <li><a href="mailto:">Email</a></li>
+          <li><a href="tel:">Telefon</a></li>
+          <li>Anschrift</li>
+        </ol>
+      </article>
+    </haupt>
   </body>
 </html>

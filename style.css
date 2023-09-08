@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Gill Sans, Calibri;
+}
+
+.style-header {
+  text-align: center;
+  padding: 32px;
+  background-color: beige;
+}
+.style-haupt {
+  max-width: 800px;
+  margin-left: auto;
+  padding: 32px;
+}
+/*Platz zw Main Elementen*/
+haupt > article {
+  /*background-color: #f3f3f3;*/
+  margin-top: 50px;
+}
+
+/*nav-link Eigenschaften*/
+nav a {
+  color: brown;
+}
+nav a:hover {
+  color: coral;
+}
+nav a:active {
+  color: crimson;
+  font-size: larger;
+}
+
+/*Abstand zw nav-links*/
+nav > a + a {
+  margin-left: 20px;
+}
+
+/*Border über alles ausser erstes Element*/
+haupt > article + article {
+  border-top: 2px solid grey;
+}
