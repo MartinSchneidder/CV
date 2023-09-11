@@ -4,8 +4,7 @@
 body {
   margin: 0;
 }
-
-* {
+html {
   font-family: "Roboto", sans-serif;
 }
 
@@ -25,13 +24,8 @@ h6 {
 }
 .style-haupt {
   max-width: 800px;
-  margin-left: auto;
-  padding: 32px;
-}
-/*Platz zw Main Elementen*/
-haupt > article {
-  /*background-color: #f3f3f3;*/
-  margin-top: 50px;
+  margin-left: 15%;
+  padding: 64px; /*Platz zw Main Elementen*/
 }
 
 /*nav-link Eigenschaften*/
@@ -45,13 +39,39 @@ nav a:active {
   color: crimson;
   font-size: larger;
 }
-
-/*Abstand zw nav-links*/
-nav > a + a {
+.nav-abstand-20 {
   margin-left: 20px;
 }
 
-/*Border über alles ausser erstes Element*/
+/*Border über alle article ausser erstes, als Trenner*/
 haupt > article + article {
   border-top: 2px solid grey;
+}
+
+::selection {
+  background-color: #deb88794;
+}
+
+.p-header::after {
+  content: " ✔️ ";
+}
+
+.oneline-header {
+  display: inline-block;
+}
+.oneline-subheader {
+  display: inline-block;
+}
+
+.offsetleft {
+  position: relative;
+  left: -15px;
+}
+.hire-me {
+  background-color: navajowhite;
+  padding: 12px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 10px;
 }
