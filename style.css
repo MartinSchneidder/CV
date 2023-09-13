@@ -1,3 +1,28 @@
+html {
+  font-size: 16px;
+}
+/*fuer mittlere Bildschirme*/
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/*fuer groeßere Bildschirme*/
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media print {
+  .hire-me {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,15 +44,33 @@ h6 {
 
 .style-header {
   text-align: center;
-  padding: 32px;
+  padding: 2rem;
   background-color: beige;
 }
-.style-haupt {
-  max-width: 800px;
-  margin-left: 15%;
-  padding: 64px; /*Platz zw Main Elementen*/
+.header-group {
+  font-size: 4rem;
 }
-
+.h1-header {
+  font-size: 1em;
+}
+.p-header {
+  font-size: 0.25em;
+}
+.p-header::after {
+  content: " ✔️ ";
+}
+.hire-me {
+  /*hire me button oben rechts*/
+  background-color: navajowhite;
+  padding: 0.75rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 0.625rem;
+  @media screen and (min-width: 992px) {
+    position: fixed;
+  }
+}
 /*nav-link Eigenschaften*/
 nav a {
   color: brown;
@@ -40,20 +83,28 @@ nav a:active {
   font-size: larger;
 }
 .nav-abstand-20 {
-  margin-left: 20px;
+  margin-left: 1.25rem;
+}
+.style-haupt {
+  max-width: 70ch; /*max 70 zeichen Breite*/
+  padding: 4rem; /*Platz zw Main Elementen*/
+  margin: 0 auto;
+
+  @media screen and (min-width: 786px) {
+    padding: 5rem;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 6rem;
+  }
 }
 
 /*Border über alle article ausser erstes, als Trenner*/
 haupt > article + article {
-  border-top: 2px solid grey;
+  border-top: 0.125rem solid grey;
 }
 
 ::selection {
   background-color: #deb88794;
-}
-
-.p-header::after {
-  content: " ✔️ ";
 }
 
 .oneline-header {
@@ -65,13 +116,5 @@ haupt > article + article {
 
 .offsetleft {
   position: relative;
-  left: -15px;
-}
-.hire-me {
-  background-color: navajowhite;
-  padding: 12px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  border-radius: 10px;
+  left: -1rem;
 }
