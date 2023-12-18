@@ -1,7 +1,3 @@
 # Curriculum Vitae
 
-> Hier entsteht mein CV
----
-Martin Schneider
----
-> Hier entsteht mein CV
+[Link zur Vita](https://martinschneidder.github.io/cv/)
