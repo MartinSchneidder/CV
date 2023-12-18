@@ -1,3 +1,3 @@
 # Curriculum Vitae
 
-[Link zur Vita](https://martinschneidder.github.io/cv/)
+[Link zur Vita](https://martinschneidder.github.io/CV/)
